@@ -126,23 +126,27 @@ export default function PracticeCenterPage() {
             Select Reading Test:
           </span>
           {readingTests.map((t, idx) => {
-            const isIelts16 = t.bookSource.includes('16');
+            const match = t.bookSource.match(/(?:Cambridge|IELTS)\s*(\d+)/i);
+            const bookNum = match ? match[1] : '';
+            const label = bookNum ? `IELTS ${bookNum} P${t.passageNumber}` : `${t.bookSource.split('—')[0].replace('Academic', '').trim()} P${t.passageNumber}`;
+            const isSelected = selectedReadingIndex === idx;
+
             return (
               <button
                 key={t.id}
                 onClick={() => setSelectedReadingIndex(idx)}
-                className={`btn btn-sm interactive-press ${selectedReadingIndex === idx ? 'btn-secondary' : 'btn-ghost'}`}
+                className={`btn btn-sm interactive-press ${isSelected ? 'btn-secondary' : 'btn-ghost'}`}
                 style={{
                   fontSize: '12px',
-                  border: selectedReadingIndex === idx ? '1px solid #38bdf8' : '1px solid var(--border-subtle)',
-                  background: selectedReadingIndex === idx ? 'rgba(56, 189, 248, 0.12)' : 'var(--bg-card)',
+                  border: isSelected ? '1px solid #38bdf8' : '1px solid var(--border-subtle)',
+                  background: isSelected ? 'rgba(56, 189, 248, 0.12)' : 'var(--bg-card)',
                   display: 'flex',
                   alignItems: 'center',
                   gap: '6px',
                 }}
               >
-                <span style={{ fontWeight: 700, color: isIelts16 ? '#38bdf8' : 'var(--text-primary)' }}>
-                  {isIelts16 ? `IELTS 16 P${t.passageNumber}` : `${t.bookSource.split('—')[0].replace('Academic', '').trim()} P${t.passageNumber}`}
+                <span style={{ fontWeight: 700, color: isSelected ? '#38bdf8' : 'var(--text-primary)' }}>
+                  {label}
                 </span>
                 <span style={{ color: 'var(--text-muted)', fontSize: '11px' }}>
                   ({t.questions.length}Q)
