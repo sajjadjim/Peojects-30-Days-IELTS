@@ -59,6 +59,32 @@ create policy "Allow insert access to all" on public.ielts_study_data
 create policy "Allow update access to all" on public.ielts_study_data
   for update using (true) with check (true);
 
--- 3. Optional: Enable Supabase Realtime for instant synchronization
+-- 3. Optional Table for storing practice test banks individually
+create table if not exists public.ielts_practice_tests (
+  id text primary key,
+  module text not null default 'reading', -- reading, listening, writing, speaking
+  book_source text not null,
+  passage_or_section_number integer,
+  title text not null,
+  content text not null,
+  questions jsonb not null default '[]'::jsonb,
+  total_questions integer default 0,
+  recommended_minutes integer default 20,
+  created_at timestamp with time zone default timezone('utc'::text, now()) not null,
+  updated_at timestamp with time zone default timezone('utc'::text, now()) not null
+);
+
+alter table public.ielts_practice_tests enable row level security;
+
+create policy "Allow read access to all" on public.ielts_practice_tests
+  for select using (true);
+
+create policy "Allow insert access to all" on public.ielts_practice_tests
+  for insert with check (true);
+
+create policy "Allow update access to all" on public.ielts_practice_tests
+  for update using (true) with check (true);
+
+-- 4. Enable Supabase Realtime for instant synchronization
 alter publication supabase_realtime add table public.ielts_users;
 alter publication supabase_realtime add table public.ielts_study_data;

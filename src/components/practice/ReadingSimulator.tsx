@@ -386,6 +386,7 @@ export default function ReadingSimulator({ testSet, onFinish }: ReadingSimulator
                                 type="button"
                                 disabled={isSubmitted}
                                 onClick={() => handleAnswerChange(q.id, opt)}
+                                className="interactive-press"
                                 style={{
                                   padding: '6px 14px',
                                   borderRadius: 'var(--radius-sm)',
@@ -405,12 +406,115 @@ export default function ReadingSimulator({ testSet, onFinish }: ReadingSimulator
                         </div>
                       )}
 
-                      {q.type === 'sentence_completion' && (
+                      {q.type === 'yes_no_not_given' && (
+                        <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+                          {['YES', 'NO', 'NOT GIVEN'].map((opt) => {
+                            const isSelected = userAnswer.toUpperCase() === opt;
+                            return (
+                              <button
+                                key={opt}
+                                type="button"
+                                disabled={isSubmitted}
+                                onClick={() => handleAnswerChange(q.id, opt)}
+                                className="interactive-press"
+                                style={{
+                                  padding: '6px 14px',
+                                  borderRadius: 'var(--radius-sm)',
+                                  fontSize: '12px',
+                                  fontWeight: 700,
+                                  cursor: isSubmitted ? 'default' : 'pointer',
+                                  border: isSelected ? '1px solid #38bdf8' : '1px solid var(--border-subtle)',
+                                  background: isSelected ? 'rgba(56, 189, 248, 0.2)' : 'rgba(255, 255, 255, 0.04)',
+                                  color: isSelected ? '#38bdf8' : 'var(--text-secondary)',
+                                  transition: 'all 0.15s ease',
+                                }}
+                              >
+                                {opt}
+                              </button>
+                            );
+                          })}
+                        </div>
+                      )}
+
+                      {q.type === 'matching_headings' && q.options && (
+                        <div>
+                          <select
+                            disabled={isSubmitted}
+                            value={userAnswer}
+                            onChange={(e) => handleAnswerChange(q.id, e.target.value)}
+                            className="select"
+                            style={{
+                              width: '100%',
+                              maxWidth: '480px',
+                              fontSize: '13px',
+                              padding: '8px 12px',
+                              borderColor: userAnswer ? '#38bdf8' : undefined,
+                            }}
+                          >
+                            <option value="">-- Choose matching heading --</option>
+                            {q.options.map((headingOpt) => {
+                              const headingCode = headingOpt.split('.')[0].trim();
+                              return (
+                                <option key={headingOpt} value={headingCode}>
+                                  {headingOpt}
+                                </option>
+                              );
+                            })}
+                          </select>
+                        </div>
+                      )}
+
+                      {q.type === 'multiple_choice' && q.options && (
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                          {q.options.map((opt) => {
+                            const optCode = opt.split('.')[0].trim();
+                            const isSelected =
+                              userAnswer.toUpperCase() === optCode.toUpperCase() ||
+                              userAnswer.toLowerCase() === opt.toLowerCase();
+                            return (
+                              <button
+                                key={opt}
+                                type="button"
+                                disabled={isSubmitted}
+                                onClick={() => handleAnswerChange(q.id, optCode)}
+                                className="interactive-press"
+                                style={{
+                                  textAlign: 'left',
+                                  padding: '8px 14px',
+                                  borderRadius: 'var(--radius-sm)',
+                                  fontSize: '13px',
+                                  cursor: isSubmitted ? 'default' : 'pointer',
+                                  border: isSelected ? '1px solid #38bdf8' : '1px solid var(--border-subtle)',
+                                  background: isSelected ? 'rgba(56, 189, 248, 0.15)' : 'rgba(255, 255, 255, 0.03)',
+                                  color: isSelected ? '#38bdf8' : 'var(--text-secondary)',
+                                  transition: 'all 0.15s ease',
+                                  display: 'flex',
+                                  alignItems: 'flex-start',
+                                  gap: '8px',
+                                }}
+                              >
+                                <span
+                                  style={{
+                                    fontWeight: 700,
+                                    color: isSelected ? '#38bdf8' : '#818cf8',
+                                    minWidth: '20px',
+                                  }}
+                                >
+                                  {optCode}.
+                                </span>
+                                <span>{opt.replace(/^[A-Za-z0-9ivx]+\.\s*/, '')}</span>
+                              </button>
+                            );
+                          })}
+                        </div>
+                      )}
+
+                      {(q.type === 'sentence_completion' || (!q.options && q.type !== 'true_false_not_given' && q.type !== 'yes_no_not_given')) && (
                         <div>
                           <input
                             type="text"
                             disabled={isSubmitted}
-                            placeholder="Type answer here..."
+                            placeholder="Type ONE WORD ONLY..."
                             className="input"
                             value={userAnswer}
                             onChange={(e) => handleAnswerChange(q.id, e.target.value)}

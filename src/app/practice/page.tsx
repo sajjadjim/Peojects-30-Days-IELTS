@@ -121,23 +121,48 @@ export default function PracticeCenterPage() {
 
       {/* Module Selector Dropdown / Pills if multiple sets exist */}
       {activeModule === 'reading' && readingTests.length > 1 && (
-        <div style={{ display: 'flex', gap: '8px', marginBottom: '16px', alignItems: 'center' }}>
+        <div style={{ display: 'flex', gap: '8px', marginBottom: '16px', alignItems: 'center', flexWrap: 'wrap' }}>
           <span style={{ fontSize: '12px', fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase' }}>
-            Select Test:
+            Select Reading Test:
           </span>
-          {readingTests.map((t, idx) => (
-            <button
-              key={t.id}
-              onClick={() => setSelectedReadingIndex(idx)}
-              className={`btn btn-sm ${selectedReadingIndex === idx ? 'btn-secondary' : 'btn-ghost'}`}
-              style={{
-                fontSize: '12px',
-                border: selectedReadingIndex === idx ? '1px solid #38bdf8' : '1px solid transparent',
-              }}
-            >
-              {t.bookSource.split('—')[0].trim()} P{t.passageNumber}
-            </button>
-          ))}
+          {readingTests.map((t, idx) => {
+            const isIelts16 = t.bookSource.includes('16');
+            return (
+              <button
+                key={t.id}
+                onClick={() => setSelectedReadingIndex(idx)}
+                className={`btn btn-sm interactive-press ${selectedReadingIndex === idx ? 'btn-secondary' : 'btn-ghost'}`}
+                style={{
+                  fontSize: '12px',
+                  border: selectedReadingIndex === idx ? '1px solid #38bdf8' : '1px solid var(--border-subtle)',
+                  background: selectedReadingIndex === idx ? 'rgba(56, 189, 248, 0.12)' : 'var(--bg-card)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '6px',
+                }}
+              >
+                <span style={{ fontWeight: 700, color: isIelts16 ? '#38bdf8' : 'var(--text-primary)' }}>
+                  {isIelts16 ? `IELTS 16 P${t.passageNumber}` : `${t.bookSource.split('—')[0].replace('Academic', '').trim()} P${t.passageNumber}`}
+                </span>
+                <span style={{ color: 'var(--text-muted)', fontSize: '11px' }}>
+                  ({t.questions.length}Q)
+                </span>
+              </button>
+            );
+          })}
+          <span style={{
+            fontSize: '11px',
+            color: '#10b981',
+            background: 'rgba(16, 185, 129, 0.12)',
+            padding: '2px 8px',
+            borderRadius: '4px',
+            border: '1px solid rgba(16, 185, 129, 0.25)',
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '4px',
+          }}>
+            <span>☁ Supabase Stored</span>
+          </span>
         </div>
       )}
 

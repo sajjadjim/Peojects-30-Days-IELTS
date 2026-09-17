@@ -1,6 +1,10 @@
 import { ReadingPracticeSet, ListeningPracticeSet, WritingPracticeSet, SpeakingPracticeSet } from '@/types/practice';
+import ielts16Data from '@/data/ielts16_academic_reading_test1.json';
+
+export const ielts16ReadingPassages: ReadingPracticeSet[] = ielts16Data.passages as unknown as ReadingPracticeSet[];
 
 export const sampleReadingTests: ReadingPracticeSet[] = [
+  ...ielts16ReadingPassages,
   {
     id: 'cam-18-read-1',
     bookSource: 'Cambridge 18 Academic — Test 1 Passage 1',

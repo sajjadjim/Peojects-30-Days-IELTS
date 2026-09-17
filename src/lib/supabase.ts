@@ -226,6 +226,62 @@ export async function saveIELTSDataToSupabase(
 }
 
 /**
+ * Saves a Cambridge / IELTS practice test bank to the Supabase database.
+ */
+export async function saveTestBankToSupabase(testBankData: any): Promise<{ success: boolean; error?: string }> {
+  if (!isSupabaseConfigured) {
+    return { success: false, error: 'Supabase is not configured' };
+  }
+
+  try {
+    const { error } = await supabase
+      .from('ielts_study_data')
+      .upsert({
+        id: 'cambridge_test_bank',
+        profile: {
+          title: 'Cambridge Official Practice Tests Bank',
+          updated: new Date().toISOString(),
+        },
+        mock_tests: Array.isArray(testBankData) ? testBankData : [testBankData],
+        updated_at: new Date().toISOString(),
+      });
+
+    if (error) {
+      return { success: false, error: error.message };
+    }
+
+    return { success: true };
+  } catch (err: any) {
+    return { success: false, error: err?.message || 'Network error saving test bank to Supabase' };
+  }
+}
+
+/**
+ * Fetches the practice test bank from the Supabase database.
+ */
+export async function fetchTestBankFromSupabase(): Promise<{ data: any[] | null; error?: string }> {
+  if (!isSupabaseConfigured) {
+    return { data: null, error: 'Supabase is not configured' };
+  }
+
+  try {
+    const { data, error } = await supabase
+      .from('ielts_study_data')
+      .select('mock_tests')
+      .eq('id', 'cambridge_test_bank')
+      .maybeSingle();
+
+    if (error) {
+      return { data: null, error: error.message };
+    }
+
+    return { data: data?.mock_tests || null };
+  } catch (err: any) {
+    return { data: null, error: err?.message || 'Network error fetching test bank from Supabase' };
+  }
+}
+
+/**
  * The SQL needed to create the tables and enable RLS in Supabase.
  */
 export const SUPABASE_SQL_SETUP = `-- 1. Table for storing user accounts & authentication profiles

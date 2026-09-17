@@ -1,0 +1,621 @@
+{
+  "testId": "ielts-16-academic-test-1",
+  "book": "Cambridge IELTS 16 Academic",
+  "year": 2021,
+  "testNumber": 1,
+  "category": "Academic Reading",
+  "totalQuestions": 40,
+  "passages": [
+    {
+      "id": "cam-16-read-test1-p1",
+      "bookSource": "Cambridge 16 Academic (2021) — Test 1 Passage 1",
+      "passageNumber": 1,
+      "title": "Why we need to protect polar bears",
+      "recommendedMinutes": 20,
+      "readingPassage": "[A] Polar bears are being increasingly threatened by the effects of climate change, but their disappearance could have far-reaching consequences. They are uniquely adapted to the extreme conditions of the Arctic Circle, where temperatures can reach -40°C. One reason for this is that they have up to 11 centimetres of fat underneath their skin. Humans with comparative levels of adipose tissue would be considered obese and would be likely to suffer from diabetes and heart disease. Yet the polar bear experiences no such consequences.\n\n[B] A 2014 study by Shi Ping Liu and colleagues sheds light on this mystery. They compared the genetic structure of polar bears with that of their closest relatives from a warmer climate, the brown bears. This allowed them to determine the genes that have allowed polar bears to survive in one of the toughest environments on Earth. Liu and his colleagues found the polar bears had a gene known as APoB, which reduces levels of low-density lipoproteins (LDLs) - a form of 'bad' cholesterol. In humans, mutations of this gene are associated with increased risk of heart disease. Polar bears may therefore be an important study model to understand heart disease in humans.\n\n[C] The genome of the polar bear may also provide the solution for another condition, one that particularly affects our older generation: osteoporosis. This is a disease where bones show reduced density, usually caused by insufficient exercise, reduced calcium intake or food starvation. Bone tissue is constantly being remodelled, meaning that bone is added or removed, depending on nutrient availability and the stress that the bone is under. Female polar bears, however, undergo extreme conditions during every pregnancy. Once autumn comes around, these females will dig maternity dens in the snow and will remain there throughout the winter, both before and after the birth of their cubs. This process results in about six months of fasting, where the female bears have to keep themselves and their cubs alive, depleting their own calcium and calorie reserves. Despite this, their bones remain strong and dense.\n\n[D] Physiologists Alanda Lennox and Allen Goodship found an explanation for this paradox in 2008. They discovered that pregnant bears were able to increase the density of their bones before they started to build their dens. In addition, six months later, when they finally emerged from the den with their cubs, there was no evidence of significant loss of bone density. Hibernating brown bears do not have this capacity and must therefore resort to major bone reformation in the following spring. If the mechanism of bone remodelling in polar bears can be understood, many bedridden humans, and even astronauts, could potentially benefit.\n\n[E] The medical benefits of the polar bear for humanity certainly have their importance in our conservation efforts, but these should not be the only factors taken into consideration. We tend to want to protect animals we think are intelligent and possess emotions, such as elephants and primates. Bears, on the other hand, seem to be perceived as stupid and in many cases violent. And yet anecdotal evidence from the field challenges those assumptions, suggesting for example that polar bears have good problem-solving abilities. A male bear called GoGo in Tennoji Zoo, Osaka, has even been observed making use of a tool to manipulate his environment. The bear used a tree branch on multiple occasions to dislodge a piece of meat hung out of his reach. Problem-solving ability has also been witnessed in wild polar bears, although not as obviously as with GoGo. A calculated move by a male bear involved running and jumping onto barrels in an attempt to get to a photographer standing on a platform four metres high.\n\n[F] In other studies, such as one by Alison Ames in 2008, polar bears showed deliberate and focused manipulation. For example, Ames observed bears putting objects in piles and then knocking them over in what appeared to be a game. The study demonstrates that bears are capable of agile and thought-out behaviours. These examples suggest bears have greater creativity and problem-solving abilities than previously thought.\n\n[G] As for emotions, while the evidence is once again anecdotal, many bears have been seen to hit out at ice and snow - seemingly out of frustration - when they have just missed out on a kill. Moreover, polar bears can form unusual relationships with other species, including playing with the dogs used to pull sleds in the Arctic. Remarkably, one hand-raised polar bear called Agee has formed a close relationship with her owner Mark Dumas to the point where they even swim together. This is even more astonishing since polar bears are known to actively hunt humans in the wild.\n\n[H] If climate change were to lead to their extinction, this would mean not only the loss of potential breakthroughs in human medicine, but more importantly, the disappearance of an intelligent, majestic animal.",
+      "questions": [
+        {
+          "id": "c16-t1-q1",
+          "number": 1,
+          "type": "true_false_not_given",
+          "prompt": "Polar bears suffer from various health problems due to the build-up of fat under their skin.",
+          "correctAnswer": "FALSE",
+          "acceptedAnswers": ["FALSE", "F"],
+          "explanation": "Paragraph [A] states: 'Humans with comparative levels of adipose tissue would be considered obese and would be likely to suffer from diabetes and heart disease. Yet the polar bear experiences no such consequences.'",
+          "paragraphReference": "Paragraph [A]"
+        },
+        {
+          "id": "c16-t1-q2",
+          "number": 2,
+          "type": "true_false_not_given",
+          "prompt": "The study done by Liu and his colleagues compared different groups of polar bears.",
+          "correctAnswer": "FALSE",
+          "acceptedAnswers": ["FALSE", "F"],
+          "explanation": "Paragraph [B] explains that Liu and colleagues compared polar bears with 'their closest relatives from a warmer climate, the brown bears', not with different groups of polar bears.",
+          "paragraphReference": "Paragraph [B]"
+        },
+        {
+          "id": "c16-t1-q3",
+          "number": 3,
+          "type": "true_false_not_given",
+          "prompt": "Liu and colleagues were the first researchers to compare polar bears and brown bears genetically.",
+          "correctAnswer": "NOT GIVEN",
+          "acceptedAnswers": ["NOT GIVEN", "NG"],
+          "explanation": "Paragraph [B] mentions that Liu and colleagues conducted this genetic comparison in 2014, but does not state whether they were the very 'first' researchers to ever do so.",
+          "paragraphReference": "Paragraph [B]"
+        },
+        {
+          "id": "c16-t1-q4",
+          "number": 4,
+          "type": "true_false_not_given",
+          "prompt": "Polar bears are able to control their levels of 'bad' cholesterol by genetic means.",
+          "correctAnswer": "TRUE",
+          "acceptedAnswers": ["TRUE", "T"],
+          "explanation": "Paragraph [B] confirms: 'polar bears had a gene known as APoB, which reduces levels of low-density lipoproteins (LDLs) - a form of 'bad' cholesterol.'",
+          "paragraphReference": "Paragraph [B]"
+        },
+        {
+          "id": "c16-t1-q5",
+          "number": 5,
+          "type": "true_false_not_given",
+          "prompt": "Female polar bears are able to survive for about six months without food.",
+          "correctAnswer": "TRUE",
+          "acceptedAnswers": ["TRUE", "T"],
+          "explanation": "Paragraph [C] states: 'This process results in about six months of fasting, where the female bears have to keep themselves and their cubs alive...'",
+          "paragraphReference": "Paragraph [C]"
+        },
+        {
+          "id": "c16-t1-q6",
+          "number": 6,
+          "type": "true_false_not_given",
+          "prompt": "It was found that the bones of female polar bears were very weak when they came out of their dens in spring.",
+          "correctAnswer": "FALSE",
+          "acceptedAnswers": ["FALSE", "F"],
+          "explanation": "Paragraphs [C] and [D] state: 'Despite this, their bones remain strong and dense' and 'there was no evidence of significant loss of bone density.'",
+          "paragraphReference": "Paragraph [C] & [D]"
+        },
+        {
+          "id": "c16-t1-q7",
+          "number": 7,
+          "type": "true_false_not_given",
+          "prompt": "The polar bear's mechanism for increasing bone density could also be used by people one day.",
+          "correctAnswer": "TRUE",
+          "acceptedAnswers": ["TRUE", "T"],
+          "explanation": "Paragraph [D] states: 'If the mechanism of bone remodelling in polar bears can be understood, many bedridden humans, and even astronauts, could potentially benefit.'",
+          "paragraphReference": "Paragraph [D]"
+        },
+        {
+          "id": "c16-t1-q8",
+          "number": 8,
+          "type": "sentence_completion",
+          "prompt": "Complete the note with ONE WORD ONLY: People think of bears as unintelligent and _____.",
+          "correctAnswer": "violent",
+          "acceptedAnswers": ["violent"],
+          "explanation": "Paragraph [E] states: 'Bears, on the other hand, seem to be perceived as stupid and in many cases violent.' (stupid corresponds to unintelligent).",
+          "paragraphReference": "Paragraph [E]"
+        },
+        {
+          "id": "c16-t1-q9",
+          "number": 9,
+          "type": "sentence_completion",
+          "prompt": "Complete the note with ONE WORD ONLY: In Tennoji Zoo, a bear has been seen using a branch as a _____.",
+          "correctAnswer": "tool",
+          "acceptedAnswers": ["tool"],
+          "explanation": "Paragraph [E] states: 'A male bear called GoGo in Tennoji Zoo, Osaka, has even been observed making use of a tool to manipulate his environment. The bear used a tree branch...'",
+          "paragraphReference": "Paragraph [E]"
+        },
+        {
+          "id": "c16-t1-q10",
+          "number": 10,
+          "type": "sentence_completion",
+          "prompt": "Complete the note with ONE WORD ONLY: This allowed him to knock down some _____.",
+          "correctAnswer": "meat",
+          "acceptedAnswers": ["meat"],
+          "explanation": "Paragraph [E] states: 'The bear used a tree branch on multiple occasions to dislodge a piece of meat hung out of his reach.' (dislodge = knock down).",
+          "paragraphReference": "Paragraph [E]"
+        },
+        {
+          "id": "c16-t1-q11",
+          "number": 11,
+          "type": "sentence_completion",
+          "prompt": "Complete the note with ONE WORD ONLY: A wild polar bear worked out a method of reaching a platform where a _____ was located.",
+          "correctAnswer": "photographer",
+          "acceptedAnswers": ["photographer"],
+          "explanation": "Paragraph [E] states: 'in an attempt to get to a photographer standing on a platform four metres high.'",
+          "paragraphReference": "Paragraph [E]"
+        },
+        {
+          "id": "c16-t1-q12",
+          "number": 12,
+          "type": "sentence_completion",
+          "prompt": "Complete the note with ONE WORD ONLY: Polar bears have displayed behaviour such as conscious manipulation of objects and activity similar to a _____.",
+          "correctAnswer": "game",
+          "acceptedAnswers": ["game"],
+          "explanation": "Paragraph [F] states: 'Ames observed bears putting objects in piles and then knocking them over in what appeared to be a game.'",
+          "paragraphReference": "Paragraph [F]"
+        },
+        {
+          "id": "c16-t1-q13",
+          "number": 13,
+          "type": "sentence_completion",
+          "prompt": "Complete the note with ONE WORD ONLY: They may make movements suggesting _____ if disappointed when hunting.",
+          "correctAnswer": "frustration",
+          "acceptedAnswers": ["frustration"],
+          "explanation": "Paragraph [G] states: 'many bears have been seen to hit out at ice and snow - seemingly out of frustration - when they have just missed out on a kill.'",
+          "paragraphReference": "Paragraph [G]"
+        }
+      ]
+    },
+    {
+      "id": "cam-16-read-test1-p2",
+      "bookSource": "Cambridge 16 Academic (2021) — Test 1 Passage 2",
+      "passageNumber": 2,
+      "title": "The Step Pyramid of Djoser",
+      "recommendedMinutes": 20,
+      "readingPassage": "[A] The pyramids are the most famous monuments of ancient Egypt and still hold enormous interest for people in the present day. These grand, impressive tributes to the memory of the Egyptian kings have become linked with the country even though other cultures, such as the Chinese and Mayan, also built pyramids. The evolution of the pyramid form has been written and argued about for centuries. However, there is no question that, as far as Egypt is concerned, it began with one monument to one king designed by one brilliant architect: the Step Pyramid of Djoser at Saqqara.\n\n[B] Djoser was the first king of the Third Dynasty of Egypt and the first to build in stone. Prior to Djoser's reign, tombs were rectangular monuments made of dried clay brick, which covered underground passages where the deceased person was buried. For reasons which remain unclear, Djoser's main official, whose name was Imhotep, conceived of building a taller, more impressive tomb for his king by stacking stone slabs on top of one another, progressively making them smaller, to form the shape now known as the Step Pyramid. Djoser is thought to have reigned for 19 years, but some historians and scholars attribute a much longer time for his rule, owing to the number and size of the monuments he built.\n\n[C] The Step Pyramid has been thoroughly examined and investigated over the last century, and it is now known that the building process went through many different stages. Historian Marc Van de Mieroop comments on this, writing 'Much experimentation was involved, which is especially clear in the construction of the pyramid in the center of the complex. It had several plans... before it became the first Step Pyramid in history, piling six levels on top of one another... The weight of the enormous mass was a challenge for the builders, who placed the stones at an inward incline in order to prevent the monument breaking up.'\n\n[D] When finally completed, the Step Pyramid rose 62 meters high and was the tallest structure of its time. The complex in which it was built was the size of a city in ancient Egypt and included a temple, courtyards, shrines, and living quarters for the priests. It covered a region of 16 hectares and was surrounded by a wall 10.5 meters high. The wall had 13 false doors cut into it with only one true entrance cut into the south-east corner; the entire wall was then ringed by a trench 750 meters long and 40 meters wide. The false doors and the trench were incorporated into the complex to discourage unwanted visitors. If someone wished to enter, he or she would have needed to know in advance how to find the location of the true opening in the wall. Djoser was so proud of his accomplishment that he broke the tradition of having only his own name on the monument and had Imhotep's name carved on it as well.\n\n[E] The burial chamber of the tomb, where the king's body was laid to rest, was dug beneath the base of the pyramid, surrounded by a vast maze of long tunnels that had rooms off them to discourage robbers. One of the most mysterious discoveries found inside the pyramid was a large number of stone vessels. Over 40,000 of these vessels, of various forms and shapes, were discovered in storerooms off the pyramid's underground passages. They are inscribed with the names of rulers from the First and Second Dynasties of Egypt and made from different kinds of stone. There is no agreement among scholars and archaeologists on why the vessels were placed in the tomb of Djoser or what they were supposed to represent. The archaeologist Jean-Philippe Lauer, who excavated most of the pyramid and complex, believes they were originally stored and then given a 'proper burial' by Djoser in his pyramid to honor his predecessors. There are other historians, however, who claim the vessels were dumped into the shafts as yet another attempt to prevent grave robbers from getting to the king's burial chamber.\n\n[F] Unfortunately, all of the precautions and intricate design of the underground network did not prevent ancient robbers from finding a way in. Djoser's grave goods, and even his body, were stolen at some point in the past and all archaeologists found were a small number of his valuables overlooked by the thieves. There was enough left throughout the pyramid and its complex, however, to astonish and amaze the archaeologists who excavated it.\n\n[G] Egyptologist Miroslav Verner writes, 'Few monuments hold a place in human history as significant as that of the Step Pyramid in Saqqara... It can be said without exaggeration that this pyramid complex constitutes a milestone in the evolution of monumental stone architecture in Egypt and in the world as a whole.' The Step Pyramid was a revolutionary advance in architecture and became the archetype which all the other great pyramid builders of Egypt would follow.",
+      "questions": [
+        {
+          "id": "c16-t1-q14",
+          "number": 14,
+          "type": "matching_headings",
+          "prompt": "Choose the correct heading for Paragraph A from the list (i-ix).",
+          "options": [
+            "i. The areas and artefacts within the pyramid itself",
+            "ii. A difficult task for those involved",
+            "iii. A king who saved his people",
+            "iv. A single certainty among other less definite facts",
+            "v. An overview of the external buildings and areas",
+            "vi. A pyramid design that others copied",
+            "vii. An idea for changing the design of burial structures",
+            "viii. An incredible experience despite the few remains",
+            "ix. The answers to some unexpected questions"
+          ],
+          "correctAnswer": "iv",
+          "acceptedAnswers": ["iv", "iv.", "IV"],
+          "explanation": "Paragraph [A] concludes that despite centuries of debate over pyramid evolution, 'there is no question that, as far as Egypt is concerned, it began with one monument to one king designed by one brilliant architect'.",
+          "paragraphReference": "Paragraph [A]"
+        },
+        {
+          "id": "c16-t1-q15",
+          "number": 15,
+          "type": "matching_headings",
+          "prompt": "Choose the correct heading for Paragraph B from the list (i-ix).",
+          "options": [
+            "i. The areas and artefacts within the pyramid itself",
+            "ii. A difficult task for those involved",
+            "iii. A king who saved his people",
+            "iv. A single certainty among other less definite facts",
+            "v. An overview of the external buildings and areas",
+            "vi. A pyramid design that others copied",
+            "vii. An idea for changing the design of burial structures",
+            "viii. An incredible experience despite the few remains",
+            "ix. The answers to some unexpected questions"
+          ],
+          "correctAnswer": "vii",
+          "acceptedAnswers": ["vii", "vii.", "VII"],
+          "explanation": "Paragraph [B] describes how prior tombs were rectangular clay brick monuments, but Imhotep conceived of building a taller tomb by stacking progressively smaller stone slabs.",
+          "paragraphReference": "Paragraph [B]"
+        },
+        {
+          "id": "c16-t1-q16",
+          "number": 16,
+          "type": "matching_headings",
+          "prompt": "Choose the correct heading for Paragraph C from the list (i-ix).",
+          "options": [
+            "i. The areas and artefacts within the pyramid itself",
+            "ii. A difficult task for those involved",
+            "iii. A king who saved his people",
+            "iv. A single certainty among other less definite facts",
+            "v. An overview of the external buildings and areas",
+            "vi. A pyramid design that others copied",
+            "vii. An idea for changing the design of burial structures",
+            "viii. An incredible experience despite the few remains",
+            "ix. The answers to some unexpected questions"
+          ],
+          "correctAnswer": "ii",
+          "acceptedAnswers": ["ii", "ii.", "II"],
+          "explanation": "Paragraph [C] highlights the technical ordeal: 'The weight of the enormous mass was a challenge for the builders, who placed the stones at an inward incline in order to prevent the monument breaking up.'",
+          "paragraphReference": "Paragraph [C]"
+        },
+        {
+          "id": "c16-t1-q17",
+          "number": 17,
+          "type": "matching_headings",
+          "prompt": "Choose the correct heading for Paragraph D from the list (i-ix).",
+          "options": [
+            "i. The areas and artefacts within the pyramid itself",
+            "ii. A difficult task for those involved",
+            "iii. A king who saved his people",
+            "iv. A single certainty among other less definite facts",
+            "v. An overview of the external buildings and areas",
+            "vi. A pyramid design that others copied",
+            "vii. An idea for changing the design of burial structures",
+            "viii. An incredible experience despite the few remains",
+            "ix. The answers to some unexpected questions"
+          ],
+          "correctAnswer": "v",
+          "acceptedAnswers": ["v", "v.", "V"],
+          "explanation": "Paragraph [D] gives a comprehensive overview of the surrounding grounds: temple, courtyards, shrines, priest quarters, wall with false doors, and the surrounding 750m trench.",
+          "paragraphReference": "Paragraph [D]"
+        },
+        {
+          "id": "c16-t1-q18",
+          "number": 18,
+          "type": "matching_headings",
+          "prompt": "Choose the correct heading for Paragraph E from the list (i-ix).",
+          "options": [
+            "i. The areas and artefacts within the pyramid itself",
+            "ii. A difficult task for those involved",
+            "iii. A king who saved his people",
+            "iv. A single certainty among other less definite facts",
+            "v. An overview of the external buildings and areas",
+            "vi. A pyramid design that others copied",
+            "vii. An idea for changing the design of burial structures",
+            "viii. An incredible experience despite the few remains",
+            "ix. The answers to some unexpected questions"
+          ],
+          "correctAnswer": "i",
+          "acceptedAnswers": ["i", "i.", "I"],
+          "explanation": "Paragraph [E] details the subterranean burial chamber, maze of tunnels, and over 40,000 stone vessels found in the underground storerooms.",
+          "paragraphReference": "Paragraph [E]"
+        },
+        {
+          "id": "c16-t1-q19",
+          "number": 19,
+          "type": "matching_headings",
+          "prompt": "Choose the correct heading for Paragraph F from the list (i-ix).",
+          "options": [
+            "i. The areas and artefacts within the pyramid itself",
+            "ii. A difficult task for those involved",
+            "iii. A king who saved his people",
+            "iv. A single certainty among other less definite facts",
+            "v. An overview of the external buildings and areas",
+            "vi. A pyramid design that others copied",
+            "vii. An idea for changing the design of burial structures",
+            "viii. An incredible experience despite the few remains",
+            "ix. The answers to some unexpected questions"
+          ],
+          "correctAnswer": "viii",
+          "acceptedAnswers": ["viii", "viii.", "VIII"],
+          "explanation": "Paragraph [F] observes that although grave robbers took almost everything, 'There was enough left throughout the pyramid and its complex, however, to astonish and amaze the archaeologists who excavated it.'",
+          "paragraphReference": "Paragraph [F]"
+        },
+        {
+          "id": "c16-t1-q20",
+          "number": 20,
+          "type": "matching_headings",
+          "prompt": "Choose the correct heading for Paragraph G from the list (i-ix).",
+          "options": [
+            "i. The areas and artefacts within the pyramid itself",
+            "ii. A difficult task for those involved",
+            "iii. A king who saved his people",
+            "iv. A single certainty among other less definite facts",
+            "v. An overview of the external buildings and areas",
+            "vi. A pyramid design that others copied",
+            "vii. An idea for changing the design of burial structures",
+            "viii. An incredible experience despite the few remains",
+            "ix. The answers to some unexpected questions"
+          ],
+          "correctAnswer": "vi",
+          "acceptedAnswers": ["vi", "vi.", "VI"],
+          "explanation": "Paragraph [G] describes how the Step Pyramid 'became the archetype which all the other great pyramid builders of Egypt would follow.'",
+          "paragraphReference": "Paragraph [G]"
+        },
+        {
+          "id": "c16-t1-q21",
+          "number": 21,
+          "type": "sentence_completion",
+          "prompt": "Complete the note with ONE WORD ONLY: The complex that includes the Step Pyramid and its surroundings is considered to be as big as an Egyptian _____ of the past.",
+          "correctAnswer": "city",
+          "acceptedAnswers": ["city"],
+          "explanation": "Paragraph [D] states: 'The complex in which it was built was the size of a city in ancient Egypt...'",
+          "paragraphReference": "Paragraph [D]"
+        },
+        {
+          "id": "c16-t1-q22",
+          "number": 22,
+          "type": "sentence_completion",
+          "prompt": "Complete the note with ONE WORD ONLY: The area outside the pyramid included accommodation that was occupied by _____, along with many other buildings and features.",
+          "correctAnswer": "priests",
+          "acceptedAnswers": ["priests"],
+          "explanation": "Paragraph [D] mentions: 'living quarters for the priests' (living quarters = accommodation).",
+          "paragraphReference": "Paragraph [D]"
+        },
+        {
+          "id": "c16-t1-q23",
+          "number": 23,
+          "type": "sentence_completion",
+          "prompt": "Complete the note with ONE WORD ONLY: In addition, a long _____ encircled the wall.",
+          "correctAnswer": "trench",
+          "acceptedAnswers": ["trench"],
+          "explanation": "Paragraph [D] states: 'the entire wall was then ringed by a trench 750 meters long and 40 meters wide.' (ringed = encircled).",
+          "paragraphReference": "Paragraph [D]"
+        },
+        {
+          "id": "c16-t1-q24",
+          "number": 24,
+          "type": "sentence_completion",
+          "prompt": "Complete the note with ONE WORD ONLY: As a result, any visitors who had not been invited were cleverly prevented from entering the pyramid grounds unless they knew the _____ of the real entrance.",
+          "correctAnswer": "location",
+          "acceptedAnswers": ["location"],
+          "explanation": "Paragraph [D] explains: 'he or she would have needed to know in advance how to find the location of the true opening in the wall.'",
+          "paragraphReference": "Paragraph [D]"
+        },
+        {
+          "id": "c16-t1-q25",
+          "number": 25,
+          "type": "multiple_choice",
+          "prompt": "Which TWO of the following points does the writer make about King Djoser? (Select first letter: A, B, C, D, or E)",
+          "options": [
+            "A. Initially he had to be persuaded to build in stone rather than clay.",
+            "B. There is disagreement concerning the length of his reign.",
+            "C. He failed to appreciate Imhotep's part in the design of the Step Pyramid.",
+            "D. A few of his possessions were still in his tomb when archaeologists found it.",
+            "E. He criticised the design and construction of other pyramids in Egypt."
+          ],
+          "correctAnswer": "B",
+          "acceptedAnswers": ["B", "D"],
+          "explanation": "Paragraph [B] states: 'Djoser is thought to have reigned for 19 years, but some historians and scholars attribute a much longer time for his rule...' which confirms disagreement over the length of his reign.",
+          "paragraphReference": "Paragraph [B]"
+        },
+        {
+          "id": "c16-t1-q26",
+          "number": 26,
+          "type": "multiple_choice",
+          "prompt": "Which TWO of the following points does the writer make about King Djoser? (Select second letter: A, B, C, D, or E)",
+          "options": [
+            "A. Initially he had to be persuaded to build in stone rather than clay.",
+            "B. There is disagreement concerning the length of his reign.",
+            "C. He failed to appreciate Imhotep's part in the design of the Step Pyramid.",
+            "D. A few of his possessions were still in his tomb when archaeologists found it.",
+            "E. He criticised the design and construction of other pyramids in Egypt."
+          ],
+          "correctAnswer": "D",
+          "acceptedAnswers": ["D", "B"],
+          "explanation": "Paragraph [F] states: 'all archaeologists found were a small number of his valuables overlooked by the thieves', confirming a few possessions remained.",
+          "paragraphReference": "Paragraph [F]"
+        }
+      ]
+    },
+    {
+      "id": "cam-16-read-test1-p3",
+      "bookSource": "Cambridge 16 Academic (2021) — Test 1 Passage 3",
+      "passageNumber": 3,
+      "title": "The future of work",
+      "recommendedMinutes": 20,
+      "readingPassage": "[A] According to a leading business consultancy, 3-14% of the global workforce will need to switch to a different occupation within the next 10-15 years, and all workers will need to adapt as their occupations evolve alongside increasingly capable machines. Automation - or 'embodied artificial intelligence' (AI) - is one aspect of the disruptive effects of technology on the labour market. 'Disembodied AI', like the algorithms running in our smartphones, is another.\n\n[B] Dr Stella Pachidi from Cambridge Judge Business School believes that some of the most fundamental changes are happening as a result of the 'algorithmication' of jobs that are dependent on data rather than on production - the so-called knowledge economy. Algorithms are capable of learning from data to undertake tasks that previously needed human judgement, such as reading legal contracts, analysing medical scans and gathering market intelligence.\n\n[C] 'In many cases, they can outperform humans,' says Pachidi. 'Organisations are attracted to using algorithms because they want to make choices based on what they consider is 'perfect information', as well as to reduce costs and enhance productivity.' 'But these enhancements are not without consequences,' says Pachidi. 'If routine cognitive tasks are taken over by AI, how do professions develop their future experts?' she asks. 'One way of learning about a job is 'legitimate peripheral participation' - a novice stands next to experts and learns by observation. If this isn't happening, then you need to find new ways to learn.'\n\n[D] Another issue is the extent to which the technology influences or even controls the workforce. For over two years, Pachidi monitored a telecommunications company. 'The way telecoms salespeople work is through personal and frequent contact with clients, using the benefit of experience to assess a situation and reach a decision. However, the company had started using a[n]... algorithm that defined when account managers should contact certain customers about which kinds of campaigns and what to offer them.' The algorithm - usually built by external designers - often becomes the keeper of knowledge, she explains. In cases like this, Pachidi believes, a short-sighted view begins to creep into working practices whereby workers learn through the 'algorithm's eyes' and become dependent on its instructions. Alternative explorations - where experimentation and human instinct lead to progress and new ideas - are effectively discouraged.\n\n[E] Pachidi and colleagues even observed people developing strategies to make the algorithm work to their own advantage. 'We are seeing cases where workers feed the algorithm with false data to reach their targets,' she reports. It's scenarios like these that many researchers are working to avoid. Their objective is to make AI technologies more trustworthy and transparent, so that organisations and individuals understand how AI decisions are made. In the meantime, says Pachidi, 'We need to make sure we fully understand the dilemmas that this new world raises regarding expertise, occupational boundaries and control.'\n\n[F] Economist Professor Hamish Low believes that the future of work will involve major transitions across the whole life course for everyone: 'The traditional trajectory of full-time education followed by full-time work followed by a pensioned retirement is a thing of the past,' says Low. Instead, he envisages a multistage employment life: one where retraining happens across the life course, and where multiple jobs and no job happen by choice at different stages. On the subject of job losses, Low believes the predictions are founded on a fallacy: 'It assumes that the number of jobs is fixed. If in 30 years, half of 100 jobs are being carried out by robots, that doesn't mean we are left with just 50 jobs for humans. The number of jobs will increase: we would expect there to be 150 jobs.'\n\n[G] Dr Ewan McGaughey, at Cambridge's Centre for Business Research and King's College London, agrees that 'apocalyptic' views about the future of work are misguided. 'It's the laws that restrict the supply of capital to the job market, not the advent of new technologies that causes unemployment.' His recently published research answers the question of whether automation, AI and robotics will mean a 'jobless future' by looking at the causes of unemployment. 'History is clear that change can mean redundancies. But social policies can tackle this through retraining and redeployment.'\n\n[H] He adds: 'If there is going to be change to jobs as a result of AI and robotics then I'd like to see governments seizing the opportunity to improve policy to enforce good job security. We can 'reprogramme' the law to prepare for a fairer future of work and leisure.' McGaughey's findings are a call to arms to leaders of organisations, governments and banks to pre-empt the coming changes with bold new policies that guarantee full employment, fair incomes and a thriving economic democracy. 'The promises of these new technologies are astounding. They deliver humankind the capacity to live in a way that nobody could have once imagined,' he adds. 'Just as the industrial revolution brought people past subsistence agriculture, and the corporate revolution enabled mass production, a third revolution has been pronounced. But it will not only be one of technology. The next revolution will be social.'",
+      "questions": [
+        {
+          "id": "c16-t1-q27",
+          "number": 27,
+          "type": "multiple_choice",
+          "prompt": "The first paragraph tells us about:",
+          "options": [
+            "A. the kinds of jobs that will be most affected by the growth of AI.",
+            "B. the extent to which AI will alter the nature of the work that people do.",
+            "C. the proportion of the world's labour force who will have jobs in AI in the future.",
+            "D. the difference between ways that embodied and disembodied AI will impact on workers."
+          ],
+          "correctAnswer": "B",
+          "acceptedAnswers": ["B"],
+          "explanation": "Paragraph [A] states that 3-14% of the global workforce will need to switch occupations and 'all workers will need to adapt as their occupations evolve alongside increasingly capable machines.'",
+          "paragraphReference": "Paragraph [A]"
+        },
+        {
+          "id": "c16-t1-q28",
+          "number": 28,
+          "type": "multiple_choice",
+          "prompt": "According to the second paragraph, what is Stella Pachidi's view of the 'knowledge economy'?",
+          "options": [
+            "A. It is having an influence on the number of jobs available.",
+            "B. It is changing people's attitudes towards their occupations.",
+            "C. It is the main reason why the production sector is declining.",
+            "D. It is a key factor driving current developments in the workplace."
+          ],
+          "correctAnswer": "D",
+          "acceptedAnswers": ["D"],
+          "explanation": "Paragraph [B] mentions that 'some of the most fundamental changes are happening as a result of the algorithmication of jobs that are dependent on data rather than on production - the so-called knowledge economy.'",
+          "paragraphReference": "Paragraph [B]"
+        },
+        {
+          "id": "c16-t1-q29",
+          "number": 29,
+          "type": "multiple_choice",
+          "prompt": "What did Pachidi observe at the telecommunications company?",
+          "options": [
+            "A. staff disagreeing with the recommendations of AI",
+            "B. staff feeling resentful about the intrusion of AI in their work",
+            "C. staff making sure that AI produces the results that they want",
+            "D. staff allowing AI to carry out tasks they ought to do themselves"
+          ],
+          "correctAnswer": "C",
+          "acceptedAnswers": ["C"],
+          "explanation": "Paragraph [E] notes: 'We are seeing cases where workers feed the algorithm with false data to reach their targets' (making sure the AI produces desired results).",
+          "paragraphReference": "Paragraph [E]"
+        },
+        {
+          "id": "c16-t1-q30",
+          "number": 30,
+          "type": "multiple_choice",
+          "prompt": "In his recently published research, Ewan McGaughey:",
+          "options": [
+            "A. challenges the idea that redundancy is a negative thing.",
+            "B. shows the profound effect of mass unemployment on society.",
+            "C. highlights some differences between past and future job losses.",
+            "D. illustrates how changes in the job market can be successfully handled."
+          ],
+          "correctAnswer": "D",
+          "acceptedAnswers": ["D"],
+          "explanation": "Paragraph [G] states: 'History is clear that change can mean redundancies. But social policies can tackle this through retraining and redeployment.'",
+          "paragraphReference": "Paragraph [G]"
+        },
+        {
+          "id": "c16-t1-q31",
+          "number": 31,
+          "type": "multiple_choice",
+          "prompt": "Complete summary: Stella Pachidi of Cambridge Judge Business School has been focusing on the 'algorithmication' of jobs which rely not on production but on _____ (Choose letter A-G: A. pressure, B. satisfaction, C. intuition, D. promotion, E. reliance, F. confidence, G. information).",
+          "options": [
+            "A. pressure",
+            "B. satisfaction",
+            "C. intuition",
+            "D. promotion",
+            "E. reliance",
+            "F. confidence",
+            "G. information"
+          ],
+          "correctAnswer": "G",
+          "acceptedAnswers": ["G", "information"],
+          "explanation": "Paragraph [B] describes jobs that are 'dependent on data rather than on production' (data = information, hence G).",
+          "paragraphReference": "Paragraph [B]"
+        },
+        {
+          "id": "c16-t1-q32",
+          "number": 32,
+          "type": "multiple_choice",
+          "prompt": "Complete summary: While monitoring a telecommunications company, Pachidi observed a growing _____ on the recommendations made by AI, as workers begin to learn through the 'algorithm's eyes'. (Choose letter A-G)",
+          "options": [
+            "A. pressure",
+            "B. satisfaction",
+            "C. intuition",
+            "D. promotion",
+            "E. reliance",
+            "F. confidence",
+            "G. information"
+          ],
+          "correctAnswer": "E",
+          "acceptedAnswers": ["E", "reliance"],
+          "explanation": "Paragraph [D] states: 'workers learn through the algorithm's eyes and become dependent on its instructions' (dependent on = reliance, hence E).",
+          "paragraphReference": "Paragraph [D]"
+        },
+        {
+          "id": "c16-t1-q33",
+          "number": 33,
+          "type": "multiple_choice",
+          "prompt": "Complete summary: Meanwhile, staff are deterred from experimenting and using their own _____, and are therefore prevented from achieving innovation. (Choose letter A-G)",
+          "options": [
+            "A. pressure",
+            "B. satisfaction",
+            "C. intuition",
+            "D. promotion",
+            "E. reliance",
+            "F. confidence",
+            "G. information"
+          ],
+          "correctAnswer": "C",
+          "acceptedAnswers": ["C", "intuition"],
+          "explanation": "Paragraph [D] states: 'where experimentation and human instinct lead to progress and new ideas - are effectively discouraged' (human instinct = intuition, hence C).",
+          "paragraphReference": "Paragraph [D]"
+        },
+        {
+          "id": "c16-t1-q34",
+          "number": 34,
+          "type": "multiple_choice",
+          "prompt": "Complete summary: To avoid the kind of situations which Pachidi observed, researchers are trying to make AI's decision-making process easier to comprehend, and to increase users' _____ with regard to the technology. (Choose letter A-G)",
+          "options": [
+            "A. pressure",
+            "B. satisfaction",
+            "C. intuition",
+            "D. promotion",
+            "E. reliance",
+            "F. confidence",
+            "G. information"
+          ],
+          "correctAnswer": "F",
+          "acceptedAnswers": ["F", "confidence"],
+          "explanation": "Paragraph [E] states: 'Their objective is to make AI technologies more trustworthy and transparent' (trustworthy = increasing users' confidence, hence F).",
+          "paragraphReference": "Paragraph [E]"
+        },
+        {
+          "id": "c16-t1-q35",
+          "number": 35,
+          "type": "multiple_choice",
+          "prompt": "Match statement with person: Greater levels of automation will not result in lower employment. (A. Stella Pachidi, B. Hamish Low, C. Ewan McGaughey)",
+          "options": [
+            "A. Stella Pachidi",
+            "B. Hamish Low",
+            "C. Ewan McGaughey"
+          ],
+          "correctAnswer": "B",
+          "acceptedAnswers": ["B", "Hamish Low"],
+          "explanation": "Paragraph [F]: Professor Hamish Low argues: 'that doesn't mean we are left with just 50 jobs for humans. The number of jobs will increase: we would expect there to be 150 jobs.'",
+          "paragraphReference": "Paragraph [F]"
+        },
+        {
+          "id": "c16-t1-q36",
+          "number": 36,
+          "type": "multiple_choice",
+          "prompt": "Match statement with person: There are several reasons why AI is appealing to businesses. (A. Stella Pachidi, B. Hamish Low, C. Ewan McGaughey)",
+          "options": [
+            "A. Stella Pachidi",
+            "B. Hamish Low",
+            "C. Ewan McGaughey"
+          ],
+          "correctAnswer": "A",
+          "acceptedAnswers": ["A", "Stella Pachidi"],
+          "explanation": "Paragraph [C]: Stella Pachidi states: 'Organisations are attracted to using algorithms because they want to make choices based on what they consider is 'perfect information', as well as to reduce costs and enhance productivity.'",
+          "paragraphReference": "Paragraph [C]"
+        },
+        {
+          "id": "c16-t1-q37",
+          "number": 37,
+          "type": "multiple_choice",
+          "prompt": "Match statement with person: AI's potential to transform people's lives has parallels with major cultural shifts which occurred in previous eras. (A. Stella Pachidi, B. Hamish Low, C. Ewan McGaughey)",
+          "options": [
+            "A. Stella Pachidi",
+            "B. Hamish Low",
+            "C. Ewan McGaughey"
+          ],
+          "correctAnswer": "C",
+          "acceptedAnswers": ["C", "Ewan McGaughey"],
+          "explanation": "Paragraph [H]: Dr Ewan McGaughey says: 'Just as the industrial revolution brought people past subsistence agriculture, and the corporate revolution enabled mass production, a third revolution has been pronounced.'",
+          "paragraphReference": "Paragraph [H]"
+        },
+        {
+          "id": "c16-t1-q38",
+          "number": 38,
+          "type": "multiple_choice",
+          "prompt": "Match statement with person: It is important to be aware of the range of problems that AI causes. (A. Stella Pachidi, B. Hamish Low, C. Ewan McGaughey)",
+          "options": [
+            "A. Stella Pachidi",
+            "B. Hamish Low",
+            "C. Ewan McGaughey"
+          ],
+          "correctAnswer": "A",
+          "acceptedAnswers": ["A", "Stella Pachidi"],
+          "explanation": "Paragraph [E]: Stella Pachidi states: 'We need to make sure we fully understand the dilemmas that this new world raises regarding expertise, occupational boundaries and control.'",
+          "paragraphReference": "Paragraph [E]"
+        },
+        {
+          "id": "c16-t1-q39",
+          "number": 39,
+          "type": "multiple_choice",
+          "prompt": "Match statement with person: People are going to follow a less conventional career path than in the past. (A. Stella Pachidi, B. Hamish Low, C. Ewan McGaughey)",
+          "options": [
+            "A. Stella Pachidi",
+            "B. Hamish Low",
+            "C. Ewan McGaughey"
+          ],
+          "correctAnswer": "B",
+          "acceptedAnswers": ["B", "Hamish Low"],
+          "explanation": "Paragraph [F]: Professor Hamish Low says: 'The traditional trajectory of full-time education followed by full-time work followed by a pensioned retirement is a thing of the past... Instead, he envisages a multistage employment life...'",
+          "paragraphReference": "Paragraph [F]"
+        },
+        {
+          "id": "c16-t1-q40",
+          "number": 40,
+          "type": "multiple_choice",
+          "prompt": "Match statement with person: Authorities should take measures to ensure that there will be adequately paid work for everyone. (A. Stella Pachidi, B. Hamish Low, C. Ewan McGaughey)",
+          "options": [
+            "A. Stella Pachidi",
+            "B. Hamish Low",
+            "C. Ewan McGaughey"
+          ],
+          "correctAnswer": "C",
+          "acceptedAnswers": ["C", "Ewan McGaughey"],
+          "explanation": "Paragraph [H]: Dr Ewan McGaughey urges: 'a call to arms to leaders of organisations, governments and banks to pre-empt the coming changes with bold new policies that guarantee full employment, fair incomes and a thriving economic democracy.'",
+          "paragraphReference": "Paragraph [H]"
+        }
+      ]
+    }
+  ]
+}
