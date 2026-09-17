@@ -1,9 +1,11 @@
 import { ReadingPracticeSet, ListeningPracticeSet, WritingPracticeSet, SpeakingPracticeSet } from '@/types/practice';
+import ielts15Data from '@/data/ielts15_academic_reading_test1.json';
 import ielts16Data from '@/data/ielts16_academic_reading_test1.json';
 import ielts17Data from '@/data/ielts17_academic_reading_test1.json';
 import ielts18Data from '@/data/ielts18_academic_reading_test1.json';
 import ielts19Data from '@/data/ielts19_academic_reading_test1.json';
 
+export const ielts15ReadingPassages: ReadingPracticeSet[] = ielts15Data.passages as unknown as ReadingPracticeSet[];
 export const ielts16ReadingPassages: ReadingPracticeSet[] = ielts16Data.passages as unknown as ReadingPracticeSet[];
 export const ielts17ReadingPassages: ReadingPracticeSet[] = ielts17Data.passages as unknown as ReadingPracticeSet[];
 export const ielts18ReadingPassages: ReadingPracticeSet[] = ielts18Data.passages as unknown as ReadingPracticeSet[];
@@ -14,6 +16,7 @@ export const sampleReadingTests: ReadingPracticeSet[] = [
   ...ielts18ReadingPassages,
   ...ielts17ReadingPassages,
   ...ielts16ReadingPassages,
+  ...ielts15ReadingPassages,
   {
     id: 'cam-18-read-1',
     bookSource: 'Cambridge 18 Academic — Test 1 Passage 1',
