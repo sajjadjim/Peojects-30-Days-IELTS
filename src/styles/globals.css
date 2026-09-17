@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
 
 :root {
   /* Color Palette - Dark Premium Study Theme */
@@ -463,4 +464,61 @@ h1, h2, h3, h4, h5, h6 {
 
 .pulse-glow {
   animation: pulseGlow 2.5s infinite;
+}
+
+@keyframes floatGentle {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-float-gentle {
+  animation: floatGentle 4s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 16px rgba(99, 102, 241, 0.2); }
+  50% { box-shadow: 0 0 28px rgba(99, 102, 241, 0.45); }
+}
+
+.animate-glow-pulse {
+  animation: glowPulse 3s ease-in-out infinite;
+}
+
+@keyframes shimmerSweep {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.badge-shimmer {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.22) 50%, rgba(255, 255, 255, 0.04) 100%);
+  background-size: 200% 100%;
+  animation: shimmerSweep 3.5s infinite linear;
+}
+
+/* Floating Card Glow Effect */
+.card-hover-glow {
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.28s ease, background-color 0.28s ease;
+}
+
+.card-hover-glow:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.35), 0 0 24px rgba(99, 102, 241, 0.22);
+  border-color: rgba(99, 102, 241, 0.45) !important;
+}
+
+[data-theme='light'] .card-hover-glow:hover {
+  box-shadow: 0 14px 30px -8px rgba(0, 0, 0, 0.12), 0 0 20px rgba(99, 102, 241, 0.2);
+}
+
+/* Interactive Button Press */
+.interactive-press {
+  transition: transform 0.15s ease, filter 0.15s ease, box-shadow 0.15s ease;
+}
+
+.interactive-press:hover {
+  filter: brightness(1.05);
+}
+
+.interactive-press:active {
+  transform: scale(0.97);
 }

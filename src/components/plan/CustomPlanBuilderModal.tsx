@@ -106,6 +106,7 @@ export default function CustomPlanBuilderModal({ isOpen, onClose }: CustomPlanBu
         {/* Close Button */}
         <button
           onClick={onClose}
+          className="interactive-press hover:text-white"
           style={{
             position: 'absolute',
             top: '24px',
@@ -306,6 +307,7 @@ export default function CustomPlanBuilderModal({ isOpen, onClose }: CustomPlanBu
                         setIsCustomDays(false);
                         setDurationDays(preset.days);
                       }}
+                      className="interactive-press"
                       style={{
                         padding: '12px 8px',
                         borderRadius: 'var(--radius-md)',
@@ -332,6 +334,7 @@ export default function CustomPlanBuilderModal({ isOpen, onClose }: CustomPlanBu
                 <button
                   type="button"
                   onClick={() => setIsCustomDays(true)}
+                  className="interactive-press"
                   style={{
                     padding: '12px 8px',
                     borderRadius: 'var(--radius-md)',
@@ -500,13 +503,13 @@ export default function CustomPlanBuilderModal({ isOpen, onClose }: CustomPlanBu
               <button
                 type="button"
                 onClick={onClose}
-                className="btn btn-secondary"
+                className="btn btn-secondary interactive-press"
               >
                 Cancel
               </button>
               <button
                 type="submit"
-                className="btn btn-primary"
+                className="btn btn-primary interactive-press"
                 style={{ padding: '12px 24px', fontSize: '14px', fontWeight: 700 }}
               >
                 <Sparkles size={16} />

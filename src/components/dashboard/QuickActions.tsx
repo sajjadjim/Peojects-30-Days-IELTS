@@ -100,7 +100,7 @@ export default function QuickActions() {
             <Link
               key={act.title}
               href={act.href}
-              className={`glass-card glass-card-hover ${act.highlight ? 'pulse-glow' : ''}`}
+              className={`glass-card card-hover-glow interactive-press group ${act.highlight ? 'animate-glow-pulse' : ''}`}
               style={{
                 display: 'flex',
                 alignItems: 'center',
@@ -108,21 +108,25 @@ export default function QuickActions() {
                 padding: '14px 16px',
                 textDecoration: 'none',
                 borderRadius: 'var(--radius-md)',
-                border: act.highlight ? '1px solid rgba(99, 102, 241, 0.4)' : '1px solid var(--border-subtle)',
-                background: act.highlight ? 'linear-gradient(135deg, rgba(99, 102, 241, 0.16), var(--bg-card))' : 'var(--bg-card)',
+                border: act.highlight ? '1px solid rgba(99, 102, 241, 0.45)' : '1px solid var(--border-subtle)',
+                background: act.highlight ? 'linear-gradient(135deg, rgba(99, 102, 241, 0.18), var(--bg-card))' : 'var(--bg-card)',
               }}
             >
-              <div style={{
-                width: '36px',
-                height: '36px',
-                borderRadius: '8px',
-                background: act.highlight ? 'var(--primary)' : 'var(--bg-elevated)',
-                color: act.highlight ? '#ffffff' : 'var(--primary)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                flexShrink: 0,
-              }}>
+              <div
+                className="transition-transform duration-300 group-hover:scale-110"
+                style={{
+                  width: '36px',
+                  height: '36px',
+                  borderRadius: '8px',
+                  background: act.highlight ? 'var(--primary)' : 'var(--bg-elevated)',
+                  color: act.highlight ? '#ffffff' : 'var(--primary)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  flexShrink: 0,
+                  boxShadow: act.highlight ? '0 4px 12px rgba(99, 102, 241, 0.35)' : 'none',
+                }}
+              >
                 <Icon size={18} />
               </div>
               <div style={{ minWidth: 0 }}>

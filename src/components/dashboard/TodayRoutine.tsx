@@ -49,7 +49,7 @@ export default function TodayRoutine() {
   const allCompleted = currentPlan.tasks.length > 0 && currentPlan.tasks.every(t => t.completed);
 
   return (
-    <div className="glass-card" style={{ padding: '24px', margin: '24px 0' }}>
+    <div className="glass-card card-hover-glow" style={{ padding: '24px', margin: '24px 0' }}>
       {/* Header with Today's Goal */}
       <div style={{
         display: 'flex',
@@ -139,6 +139,7 @@ export default function TodayRoutine() {
           return (
             <div
               key={task.id}
+              className="group transition-all duration-200 hover:border-indigo-500/40 hover:bg-opacity-90"
               style={{
                 display: 'flex',
                 alignItems: 'center',
@@ -147,13 +148,13 @@ export default function TodayRoutine() {
                 borderRadius: 'var(--radius-md)',
                 backgroundColor: task.completed ? 'rgba(16, 185, 129, 0.08)' : 'var(--bg-elevated)',
                 border: task.completed ? '1px solid rgba(16, 185, 129, 0.25)' : '1px solid var(--border-subtle)',
-                transition: 'all 0.15s ease',
               }}
             >
               {/* Left: Checkbox & Title */}
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px', minWidth: 0 }}>
                 <button
                   onClick={() => toggleTaskCompletion(currentPlan.dayNumber, task.id)}
+                  className="interactive-press"
                   style={{
                     background: 'none',
                     border: 'none',
@@ -166,23 +167,26 @@ export default function TodayRoutine() {
                   title={task.completed ? 'Mark incomplete' : 'Mark complete'}
                 >
                   {task.completed ? (
-                    <CheckCircle2 size={22} fill="#10b981" color="var(--bg-main)" />
+                    <CheckCircle2 size={22} fill="#10b981" color="var(--bg-main)" className="transition-transform active:scale-90" />
                   ) : (
-                    <Circle size={22} />
+                    <Circle size={22} className="transition-transform active:scale-90" />
                   )}
                 </button>
 
-                <div style={{
-                  width: '32px',
-                  height: '32px',
-                  borderRadius: '8px',
-                  backgroundColor: 'var(--bg-input)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  color: color,
-                  flexShrink: 0,
-                }}>
+                <div
+                  className="transition-transform duration-200 group-hover:scale-105"
+                  style={{
+                    width: '32px',
+                    height: '32px',
+                    borderRadius: '8px',
+                    backgroundColor: 'var(--bg-input)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    color: color,
+                    flexShrink: 0,
+                  }}
+                >
                   <Icon size={16} />
                 </div>
 
@@ -216,7 +220,7 @@ export default function TodayRoutine() {
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                 <Link
                   href={`/timer?skill=${task.skill}&mins=${task.targetMinutes}`}
-                  className="btn btn-secondary btn-sm"
+                  className="btn btn-secondary btn-sm interactive-press"
                   style={{
                     padding: '5px 10px',
                     fontSize: '12px',

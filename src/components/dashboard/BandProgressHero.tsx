@@ -19,7 +19,7 @@ export default function BandProgressHero() {
   const bandGap = Number((data.profile.targetBand - stats.estimatedOverallBand).toFixed(1));
 
   return (
-    <div className="glass-card" style={{
+    <div className="glass-card card-hover-glow" style={{
       padding: '28px',
       background: 'var(--hero-bg)',
       border: '1px solid var(--border-accent)',
@@ -33,7 +33,7 @@ export default function BandProgressHero() {
         right: '-40px',
         width: '240px',
         height: '240px',
-        background: 'radial-gradient(circle, rgba(99, 102, 241, 0.2) 0%, transparent 70%)',
+        background: 'radial-gradient(circle, rgba(99, 102, 241, 0.25) 0%, transparent 70%)',
         pointerEvents: 'none',
       }} />
 
@@ -48,7 +48,7 @@ export default function BandProgressHero() {
         {/* Left: 30-Day Sprint Progress */}
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
-            <span style={{
+            <span className="badge-shimmer" style={{
               fontSize: '11px',
               fontWeight: 800,
               letterSpacing: '0.08em',
@@ -57,10 +57,11 @@ export default function BandProgressHero() {
               background: 'rgba(99, 102, 241, 0.12)',
               padding: '4px 10px',
               borderRadius: '6px',
+              border: '1px solid rgba(99, 102, 241, 0.2)',
             }}>
               {data.profile.durationDays}-Day IELTS Intensive Sprint
             </span>
-            <span style={{
+            <span className="animate-float-gentle" style={{
               display: 'inline-flex',
               alignItems: 'center',
               gap: '4px',
@@ -70,8 +71,9 @@ export default function BandProgressHero() {
               background: 'var(--accent-streak-bg)',
               padding: '4px 8px',
               borderRadius: '6px',
+              border: '1px solid rgba(249, 115, 22, 0.25)',
             }}>
-              <Flame size={13} />
+              <Flame size={13} className="text-orange-500 animate-pulse" />
               {stats.currentStreak} Day Streak
             </span>
           </div>
@@ -170,19 +172,20 @@ export default function BandProgressHero() {
                 <button
                   type="button"
                   onClick={() => setIsBuilderOpen(true)}
+                  className="interactive-press"
                   style={{
                     display: 'flex',
                     alignItems: 'center',
                     gap: '4px',
-                    background: 'rgba(99, 102, 241, 0.12)',
-                    border: '1px solid rgba(99, 102, 241, 0.25)',
+                    background: 'rgba(99, 102, 241, 0.15)',
+                    border: '1px solid rgba(99, 102, 241, 0.35)',
                     color: 'var(--primary)',
                     fontSize: '11px',
                     fontWeight: 700,
                     cursor: 'pointer',
-                    padding: '2px 8px',
-                    borderRadius: '4px',
-                    transition: 'all 0.15s ease',
+                    padding: '3px 10px',
+                    borderRadius: '6px',
+                    transition: 'all 0.2s ease',
                   }}
                   title="Customize Plan & Target Band"
                 >

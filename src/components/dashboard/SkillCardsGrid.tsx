@@ -85,7 +85,7 @@ export default function SkillCardsGrid() {
           <Link
             key={skill.id}
             href={skill.href}
-            className="glass-card glass-card-hover"
+            className="glass-card card-hover-glow group"
             style={{
               padding: '20px',
               textDecoration: 'none',
@@ -99,22 +99,25 @@ export default function SkillCardsGrid() {
             <div>
               {/* Header */}
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                <div style={{
-                  width: '40px',
-                  height: '40px',
-                  borderRadius: '10px',
-                  background: 'var(--bg-elevated)',
-                  border: `1px solid ${skill.borderColor}`,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  color: skill.accentColor,
-                }}>
+                <div
+                  className="transition-transform duration-300 group-hover:scale-110"
+                  style={{
+                    width: '40px',
+                    height: '40px',
+                    borderRadius: '10px',
+                    background: 'var(--bg-elevated)',
+                    border: `1px solid ${skill.borderColor}`,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    color: skill.accentColor,
+                  }}
+                >
                   <Icon size={20} />
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '4px', color: 'var(--text-muted)', fontSize: '12px' }}>
                   <span>{skill.sessionsCount} logged</span>
-                  <ArrowUpRight size={15} color={skill.accentColor} />
+                  <ArrowUpRight size={15} color={skill.accentColor} className="transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </div>
               </div>
 

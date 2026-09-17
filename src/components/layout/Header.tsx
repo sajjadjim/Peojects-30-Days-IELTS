@@ -81,19 +81,23 @@ export default function Header({ onOpenQuickAdd }: HeaderProps) {
         <SupabaseSyncBadge />
 
         {/* Streak Pill */}
-        <div style={{
-          display: 'flex',
-          alignItems: 'center',
-          gap: '6px',
-          padding: '6px 12px',
-          borderRadius: 'var(--radius-full)',
-          background: 'var(--accent-streak-bg)',
-          border: '1px solid rgba(249, 115, 22, 0.3)',
-          color: 'var(--accent-streak)',
-          fontSize: '12.5px',
-          fontWeight: 700,
-        }} title="Current active study streak">
-          <Flame size={16} />
+        <div
+          className="animate-float-gentle"
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '6px',
+            padding: '6px 12px',
+            borderRadius: 'var(--radius-full)',
+            background: 'var(--accent-streak-bg)',
+            border: '1px solid rgba(249, 115, 22, 0.3)',
+            color: 'var(--accent-streak)',
+            fontSize: '12.5px',
+            fontWeight: 700,
+          }}
+          title="Current active study streak"
+        >
+          <Flame size={16} className="text-orange-500 animate-pulse" />
           <span>{stats.currentStreak}d Streak</span>
         </div>
 
@@ -138,7 +142,7 @@ export default function Header({ onOpenQuickAdd }: HeaderProps) {
         {/* Start Timer CTA */}
         <Link
           href="/timer"
-          className="btn btn-primary btn-sm pulse-glow"
+          className="btn btn-primary btn-sm animate-glow-pulse interactive-press"
           style={{ textDecoration: 'none' }}
         >
           <Play size={14} fill="currentColor" />
